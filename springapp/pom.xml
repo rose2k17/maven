@@ -7,6 +7,9 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>springapp Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <properties>
+  	<org.springframework.version>4.3.5.RELEASE</org.springframework.version>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -55,16 +58,23 @@
     	<artifactId>slf4j-api</artifactId>
     	<version>1.7.21</version>
     </dependency>
-        <dependency>
+    <dependency>
     	<groupId>org.slf4j</groupId>
     	<artifactId>slf4j-log4j12</artifactId>
     	<version>1.7.21</version>
+    </dependency>   
+    <dependency>
+    	<groupId>org.hibernate</groupId>
+    	<artifactId>hibernate-entitymanager</artifactId>
+    	<version>5.1.0.Final</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-orm</artifactId>
+    	<version>${org.springframework.version}</version>
     </dependency>
   </dependencies>
   <build>
     <finalName>springapp</finalName>
   </build>
-  <properties>
-  	<org.springframework.version>4.2.5.RELEASE</org.springframework.version>
-  </properties>
 </project>
