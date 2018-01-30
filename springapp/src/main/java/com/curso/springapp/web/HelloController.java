@@ -34,7 +34,7 @@ public class HelloController {
             throws ServletException, IOException {
 
         logger.info("Returning hello view");
-
-        return new ModelAndView("servicios.jsp");
+        String nombre = "Juan";
+        return new ModelAndView("servicios.jsp", "minombre", nombre);
     }
 }
